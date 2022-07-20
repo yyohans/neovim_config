@@ -1,3 +1,4 @@
+
 :set number
 :set relativenumber
 :set encoding=utf-8
@@ -21,25 +22,31 @@ Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'neoclide/coc.nvim'
-
+Plug 'bluz71/vim-moonfly-colors'
+Plug 'sonph/onehalf'
 :set completeopt-=preview
 
 call plug#end()
 
-au ColorScheme * hi Normal ctermbg=none guibg=none
-au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
+" background transperent
+"
+" au ColorScheme * hi Normal ctermbg=none guibg=none
+" au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 
 
 nnoremap <C-t> :NERDTreeToggle<CR>
 " nnoremap <C-t> :NERDTree<CR>
 
-colorscheme dogrun
+" colorscheme dogrun
+colorscheme moonfly
 
-let g:lightline = {
-  \ 'colorscheme': 'dogrun',
-  \ }
+" let g:lightline = {
+"   \ 'colorscheme': 'dogrun',
+"   \ }
 
-let g:clap_theme = 'dogrun'
+" let g:clap_theme = 'dogrun'
+
+let g:lightline = { 'colorscheme': 'moonfly' }
 
 vmap <C-c> "+y
 imap <C-v> <Esc>"+gp
